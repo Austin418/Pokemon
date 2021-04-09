@@ -68,16 +68,17 @@ let input = `{
     "weight": 190
 }`
 
-fetch('charmeleon')
-    .then(response => response.json())
-    .then(json => init(json))
-    .catch(err => console.log(err))
+// fetch('charmeleon')
+//     .then(response => response.json())
+//     .then(json => init(json))
+//     .catch(err => console.log(err))
 
-function init(obj) {
-    console.log(obj)
-    console.log(obj.name);
-}
+// function init(obj) {
+//     console.log(obj)
+//     console.log(obj.name);
+// }
 
-function createArticle(obj) {
+// function createArticle(obj) {
     
-}
+// }
+

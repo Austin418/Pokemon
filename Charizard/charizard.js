@@ -91,7 +91,15 @@ function createHeader(obj) {
 }
 
 function createSection(obj) {
-    
+    const _name = obj['name']
+    const _nameContainer = document.createElement('div')
+    function createName(){
+        const _h1 = document.createElement('h1')
+        _h1.textContent = `${_name}`
+        section.appendChild(_nameContainer)
+        _nameContainer.appendChild(_h1)
+    }
+    createName()
     //abilities
     const _abilities = obj['abilities']
     const _abilitiesContainer = document.createElement('div')
@@ -136,26 +144,18 @@ function createSection(obj) {
     createHeight()
 
 
-    // const _baseXP = obj['base_experience']
-    // const _baseXPContainer = document.createElement('div')
-    // function createXP(){
-    //     const _h2 = document.createElement('h2')
-    //     _h2.textContent = `Base XP: ${_baseXP}`
-    //     section.appendChild(_baseXPContainer)
-    //     _baseXPContainer.appendChild(_h2)
-    // }
-    // createXP()
+    const _id = obj['id']
+    const _idContainer = document.createElement('div')
+    function createID(){
+        const _h2 = document.createElement('h2')
+        _h2.textContent = `ID: ${_id}`
+        section.appendChild(_idContainer)
+        _idContainer.appendChild(_h2)
+    }
+    createID()
 
 
-    // const _baseXP = obj['base_experience']
-    // const _baseXPContainer = document.createElement('div')
-    // function createXP(){
-    //     const _h2 = document.createElement('h2')
-    //     _h2.textContent = `Base XP: ${_baseXP}`
-    //     section.appendChild(_baseXPContainer)
-    //     _baseXPContainer.appendChild(_h2)
-    // }
-    // createXP()
+    
 
 
 
@@ -186,6 +186,9 @@ function createSection(obj) {
     //type
     const _types = obj['types']
     const _typeContainer = document.createElement('div')
+    let titleType = document.createElement('h5')
+    titleType.textContent = 'Type'
+    _typeContainer.appendChild(titleType)
     for (j in _types) {
         const _type = _types[j]['type']
 

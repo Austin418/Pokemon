@@ -81,4 +81,3 @@ let input = `{
 // function createArticle(obj) {
     
 // }
-

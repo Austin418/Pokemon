@@ -159,15 +159,15 @@ function createSection(obj) {
 
 
 
-    // const _baseXP = obj['base_experience']
-    // const _baseXPContainer = document.createElement('div')
-    // function createXP(){
-    //     const _h2 = document.createElement('h2')
-    //     _h2.textContent = `Base XP: ${_baseXP}`
-    //     section.appendChild(_baseXPContainer)
-    //     _baseXPContainer.appendChild(_h2)
-    // }
-    // createXP()
+    const _order = obj['base_experience']
+    const _orderContainer = document.createElement('div')
+    function createorder(){
+        const _h2 = document.createElement('h2')
+        _h2.textContent = `Order: ${_order}`
+        section.appendChild(_orderContainer)
+        _orderContainer.appendChild(_h2)
+    }
+    createorder()
 
     // const _baseXP = obj['base_experience']
     // const _baseXPContainer = document.createElement('div')

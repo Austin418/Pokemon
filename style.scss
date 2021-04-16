@@ -2,21 +2,30 @@
 
 html,
 body {
-    background: url(../images/cardback.png);
+    background: rgba(0, 255, 179, 0.089);
+    text-align: center;
 }
 
 // .landingHeader{
 
 // }
 
-
+.char{
+    transform: scaleX(-1) rotate(330deg);;
+    position: absolute;
+    left: 30px;
+    min-width: 750px;
+    min-height: 500px;
+    object-fit: fill;
+    z-index: -1;
+}
 .box {
     width: 450px;
     height: 450px;
     background: url(../images/smallback.png);
     background-size: cover;
-    border-radius: 3px;
-    border: 1px solid rgba(#f2f4f8, 1);
+    border-radius: 8px;
+    border: 1px solid rgba(black, 1);
     box-shadow: 0 0 0 rgba(0, 0, 0, 0), 0 0 0 rgba(0, 0, 0, 0);
     transition: ease-in-out 0.3s;
 
@@ -52,10 +61,13 @@ body {
             flex-wrap: wrap;
             padding-left: 5px;
             padding-right: 5px;
+            text-align: center;
             &:hover {
                 color: orangered;
             }
             img {
+                margin-top: 20px;
+                margin-bottom: 20px;
                 object-fit: cover;
                 max-height: 450px;
                 max-width: 450px;
@@ -64,13 +76,13 @@ body {
     }
 }
 
-#charizard {
+#charmeleon {
     grid-column: 1/2;
 }
 #charmander {
     grid-column: 2/3;
 }
 
-#charmeleon {
+#charizard {
     grid-column: 3/4;
 }

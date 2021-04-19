@@ -11,7 +11,7 @@ let input = `{
     "height": 11,
     "id": 5,
     "is_default": true,
-    "name": "charmeleon",
+    "name": "Charmeleon",
     "order": 6,
     "stats": [
       {
@@ -87,6 +87,7 @@ function createHeader(obj) {
 function createSection(obj) {
     const _name = obj['name']
     const _nameContainer = document.createElement('div')
+    _nameContainer.id = 'divName'
     function createName(){
         const _h1 = document.createElement('h1')
         _h1.textContent = `${_name}`

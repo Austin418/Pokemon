@@ -1,0 +1,22 @@
+body, html{
+    background: url('card back.png');
+    background-size: stretch;
+    background-repeat: repeat;
+    background-position: center;
+}
+
+img{
+    max-width: 600px;
+    display: flex;
+    margin: auto;
+}
+
+section{
+    width: 50vw;
+    display: grid;
+    margin: auto;
+
+}
+section div{
+    display: inline;
+}

@@ -1,8 +1,10 @@
 body, html{
-    background: url('card back.png');
+    /* background: url('card back.png'); */
     background-size: stretch;
     background-repeat: repeat;
     background-position: center;
+    font-size: medium;
+    text-align: left;
 }
 
 img{
@@ -11,12 +13,20 @@ img{
     margin: auto;
 }
 
+
+
+
 section{
+    font-size: x-large;
     width: 50vw;
     display: grid;
     margin: auto;
+    border: solid;
+    border-radius: 1rem;
 
 }
 section div{
     display: inline;
 }
+
+

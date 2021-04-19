@@ -1,68 +1,25 @@
-let input = `{"abilities": [
-        {
-            "name": "blaze"
-        },
-        {
-            "name": "solar-power"
-        }
-    ],
-    "base_experience": 62,
-    "height": 6,
-    "id": 4,
-    "is_default": true,
-    "name": "charmander",
-    "order": 5,
-    "stats": [
-        {
-            "base_stat": 39,
-            "effort": 0,
-            "stat": {
-                "name": "hp"
-            }
-        },
-        {
-            "base_stat": 52,
-            "effort": 0,
-            "stat": {
-                "name": "attack"
-            }
-        },
-        {
-            "base_stat": 43,
-            "effort": 0,
-            "stat": {
-                "name": "defense"
-            }
-        },
-        {
-            "base_stat": 60,
-            "effort": 0,
-            "stat": {
-                "name": "special-attack"
-            }
-        },
-        {
-            "base_stat": 50,
-            "effort": 0,
-            "stat": {
-                "name": "special-defense"
-            }
-        },
-        {
-            "base_stat": 65,
-            "effort": 1,
-            "stat": {
-                "name": "speed"
-            }
-        }
-    ],
-    "types": [
-        {
-            "slot": 1,
-            "type": {
-                "name": "fire"
-            }
-        }
-    ],
-    "weight": 85
-}`
+fetch('charmander.json')
+.then(response => response.json())
+.then(json => init(json))
+.catch(err => console.log(err));
+
+function init(obj){
+    let superObj = JSON.parse(string)
+    console.log(obj)
+    console.log(obj.name);
+    createStats(superObj)
+}
+
+function createStats(obj){
+const STATS = obj["stats"];
+for(STATS of charmander){
+    const H2 = document.createElement("h2")
+    const P1 = document.createElement("p1")
+    const P2 = document.createElement("p2")
+
+    H2.textContent = STATS[charmander]["name"]
+    P1.textContent = `Base Stat: ${STATS[charmander]["base_stat"]}`
+    P2.textContent = `Effort: ${STATS[charmander]["effort"]}`
+}
+
+}

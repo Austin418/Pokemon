@@ -93,7 +93,8 @@ function createHeader(obj) {
 function createSection(obj) {
     const _name = obj['name']
     const _nameContainer = document.createElement('div')
-    function createName(){
+    _nameContainer.id = 'name'
+    function createName() {
         const _h1 = document.createElement('h1')
         _h1.textContent = `${_name}`
         section.appendChild(_nameContainer)
@@ -103,17 +104,18 @@ function createSection(obj) {
     //abilities
     const _abilities = obj['abilities']
     const _abilitiesContainer = document.createElement('div')
+    _abilitiesContainer.id = 'abilities'
     let title = document.createElement('h5')
     title.textContent = 'Abilities'
     _abilitiesContainer.appendChild(title)
-    for (a in _abilities){
+    for (a in _abilities) {
         const _h2 = document.createElement('h2')
-        
-        
+
+
         _h2.textContent = _abilities[a]['name']
 
         section.appendChild(_abilitiesContainer)
-        
+
         _abilitiesContainer.appendChild(_h2)
     }
 
@@ -123,8 +125,9 @@ function createSection(obj) {
     //base_xp
     const _baseXP = obj['base_experience']
     const _baseXPContainer = document.createElement('div')
+    _baseXPContainer.id = 'basexp'
 
-    function createXP(){
+    function createXP() {
         const _h2 = document.createElement('h2')
         _h2.textContent = `Base XP: ${_baseXP}`
         section.appendChild(_baseXPContainer)
@@ -135,7 +138,8 @@ function createSection(obj) {
     //height
     const _height = obj['height']
     const _heightContainer = document.createElement('div')
-    function createHeight(){
+    _heightContainer.id = "height"
+    function createHeight() {
         const _h2 = document.createElement('h2')
         _h2.textContent = `Height: ${_height}`
         section.appendChild(_heightContainer)
@@ -146,7 +150,8 @@ function createSection(obj) {
 
     const _id = obj['id']
     const _idContainer = document.createElement('div')
-    function createID(){
+    _idContainer.id = 'id'
+    function createID() {
         const _h2 = document.createElement('h2')
         _h2.textContent = `ID: ${_id}`
         section.appendChild(_idContainer)
@@ -155,31 +160,46 @@ function createSection(obj) {
     createID()
 
 
-    
+
 
 
 
     const _order = obj['base_experience']
     const _orderContainer = document.createElement('div')
-    function createorder(){
+    _orderContainer.id = 'order'
+    function createorder() {
         const _h2 = document.createElement('h2')
         _h2.textContent = `Order: ${_order}`
         section.appendChild(_orderContainer)
         _orderContainer.appendChild(_h2)
     }
     createorder()
-
-    // const _baseXP = obj['base_experience']
-    // const _baseXPContainer = document.createElement('div')
-    // function createXP(){
-    //     const _h2 = document.createElement('h2')
-    //     _h2.textContent = `Base XP: ${_baseXP}`
-    //     section.appendChild(_baseXPContainer)
-    //     _baseXPContainer.appendChild(_h2)
-    // }
-    // createXP()
+    function createStats() {
+        const _stats = obj['stats']
+        const _statsContainer = document.createElement('div')
+        let titlestats = document.createElement('h5')
+        titlestats.textContent = 'Stats'
+        _statsContainer.appendChild(titlestats)
+        for (i in _stats) {
+            const _baseStats = _stats[i]['base_stat']
 
 
+            const _h2 = document.createElement('h2')
+            const _p = document.createElement('p')
+
+            _statsContainer.class = "card"
+            _h2.class = "top"
+            _p.class = "bottom"
+            _h2.textContent = `Base Stat: ${_baseStats}`
+            for (i in _baseStats) {
+                _h2.textContent = _type['name']
+            }
+            section.appendChild(_statsContainer)
+            _statsContainer.appendChild(_h2)
+        }
+
+    }
+    createStats()
 
 
 
@@ -192,7 +212,7 @@ function createSection(obj) {
     for (j in _types) {
         const _type = _types[j]['type']
 
-        
+
         const _h2 = document.createElement('h2')
         const _p = document.createElement('p')
 

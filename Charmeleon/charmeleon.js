@@ -11,7 +11,7 @@ let input = `{
     "height": 11,
     "id": 5,
     "is_default": true,
-    "name": "charmeleon",
+    "name": "Charmeleon",
     "order": 6,
     "stats": [
       {
@@ -82,8 +82,11 @@ function init(input) {
 
 function createHeader(obj) {
   const _img = document.createElement('img')
-  _img.src = "charzard.png"
-  header.appendChild(_img)
+  _img.src = "https://i.pinimg.com/originals/df/51/bd/df51bdb8e101f21bf5d0073ce24b8732.jpg"
+  section.appendChild(_img)
+
+  // _img.src = "charzard.png"
+  // header.appendChild(_img)
 }
 
 function createSection(obj) {

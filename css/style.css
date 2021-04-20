@@ -1,3 +1,17 @@
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #8a8a8a3b;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ffe1a0;
+  width: 15px;
+  border-radius: 7px;
+}
+
 html,
 body {
   border-radius: 15px;
@@ -6,7 +20,7 @@ body {
 }
 
 html {
-  background: #FED02F;
+  background: #fed02f;
 }
 
 .landingHeader {
@@ -88,7 +102,7 @@ html {
 }
 
 .pokedexL div a:hover {
-  color: #2C2E9D;
+  color: #2c2e9d;
 }
 
 .pokedexL div a img {
@@ -117,3 +131,26 @@ html {
   -ms-grid-column-span: 1;
   grid-column: 3/4;
 }
+
+#charzardMain {
+  color: white;
+  background: rgba(255, 123, 0, 0.651);
+}
+
+#charzardMain section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 250px 250px;
+      grid-template-columns: 250px 250px;
+  -ms-grid-rows: 100px 100px;
+      grid-template-rows: 100px 100px;
+}
+
+#charzardMain section #id {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  gap: 17px;
+}
+/*# sourceMappingURL=style.css.map */

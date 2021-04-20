@@ -82,8 +82,8 @@ function init(input) {
 
 function createHeader(obj) {
     const _img = document.createElement('img')
-    _img.src = "charzard.png"
-    header.appendChild(_img)
+    _img.src = "https://i.pinimg.com/originals/df/51/bd/df51bdb8e101f21bf5d0073ce24b8732.jpg"
+    section.appendChild(_img)
 }
 
 function createSection(obj) {
@@ -238,9 +238,6 @@ function createSection(obj) {
             const _effort = _stats[i]['effort']
             const _stat = _stats[i]['stat']
 
-
-
-
             const _h2 = document.createElement('h2')
             const _h21 = document.createElement('h2')
             const _h22 = document.createElement('h2')
@@ -259,7 +256,6 @@ function createSection(obj) {
             _statsContainer.appendChild(_h21)
             _statsContainer.appendChild(_h22)
         }
-
     }
     createStats()
 }

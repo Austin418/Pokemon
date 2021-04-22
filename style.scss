@@ -133,17 +133,55 @@ html {
     grid-column: 3/4;
 }
 
-#charzardMain {
-    color: white;
-    background: rgba(255, 123, 0, 0.651);
+#main {
+    margin: 200px;
+    color: black;
+    background: url(../images/cardback.png);
+    img{
+        margin-top: 100px;
+        border: rgb(0, 0, 0) 5px solid;
+        border-radius: 15px;
+        max-width: 65vw;
+        background: url(../images/smallback.png);
+    }
     section {
         display: grid;
-        grid-template-columns: 250px 250px;
-        grid-template-rows: 100px 100px;
+        margin: auto;
+        align-self: center;
+        justify-content: center;
+        grid-template-columns: 50vw;
+        grid-template-rows: auto auto auto auto auto;
         #id{
             display: flex;
             margin: auto;
             gap: 17px;
+
+        }
+        #abilities{
+            display: flex;
+            gap: 25px;
+            justify-content: center;
+        }
+        #type{
+            display: flex;
+            gap: 25px;
+            justify-content: center;
+        }
+        #stats{
+            display: flex;
+            flex-wrap: wrap;
+            display: grid;
+            grid-template-columns: 25% 25% 25%;
+            padding-top: 20px;
+            justify-content:center;
+            h2{
+                border-top: solid 1px white;
+            }
+            h5{
+                position: absolute;
+                top: 0;
+                display: none;
+            }
         }
     }
 }

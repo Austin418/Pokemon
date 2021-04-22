@@ -2,8 +2,11 @@ html {
   background: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/331ab1e4-cbbd-42a8-ad03-1b22f04c7ebb/d5lq6vr-5b72d498-c7c6-4cdf-8f70-c23124a6e68e.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvMzMxYWIxZTQtY2JiZC00MmE4LWFkMDMtMWIyMmYwNGM3ZWJiXC9kNWxxNnZyLTViNzJkNDk4LWM3YzYtNGNkZi04ZjcwLWMyMzEyNGE2ZTY4ZS5wbmcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.9TEx1hT7HbAvZZ3SpAnvIpdpvite8a757QOTB6c1T1g) no-repeat  center center fixed;
   background-size: 1545px;
 }
-
+::-webkit-scrollbar{
+  background: transparent;
+}
 section {
+  overflow: auto;
   display: inline-block;
   width: 300px;
   height: 500px;

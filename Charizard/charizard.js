@@ -86,7 +86,7 @@ function init(input) {
 
 function createHeader(obj) {
     const _img = document.createElement('img')
-    _img.src = "charzard.png"
+    _img.src = "charzard.jpg"
     header.appendChild(_img)
 }
 
@@ -169,7 +169,7 @@ function createSection(obj) {
             const _h2 = document.createElement('h2')
             const _p = document.createElement('p')
 
-            _typeContainer.class = "card"
+            _typeContainer.id = 'type'
             _h2.class = "top"
             _p.class = "bottom"
             for (i in _type) {
@@ -238,6 +238,7 @@ function createSection(obj) {
     function createStats() {
         const _stats = obj['stats']
         const _statsContainer = document.createElement('div')
+        _statsContainer.id = 'stats'
         let titlestats = document.createElement('h5')
         titlestats.textContent = 'Stats'
         _statsContainer.appendChild(titlestats)

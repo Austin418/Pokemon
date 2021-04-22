@@ -133,6 +133,7 @@ html {
 }
 
 #main {
+  border: 3px black solid;
   margin: 200px;
   color: black;
   background: url(../images/cardback.png);
